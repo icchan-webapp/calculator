@@ -1,0 +1,56 @@
+<!-- この度は、本コードを見ていただきありがとうございます。
+ゆっくりと見ていってください！ -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電卓アプリ</title>
+
+    <link rel="stylesheet" href="css/Doctor Reset Css.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 電卓全体 -->
+    <div class="calc_body">
+
+        <!-- 電卓液晶部分 -->
+        <div class="result">
+            <input type="text" id="result">
+        </div>
+        
+        <!-- ボタン -->
+        <div class="buttons">
+            <button  onclick="reset( ' ' )">C</button>
+            <button value="" onclick="edit(this); plmi()">+/-</button>
+            <button value="/100" onclick="edit(this); calc()">%</button>
+            <button class="operator" value="/" onclick="edit(this)">÷</button>
+
+            <button value="7" onclick="edit(this)">7</button>
+            <button value="8" onclick="edit(this)">8</button>
+            <button value="9" onclick="edit(this)">9</button>
+            <button class="operator" value="*" onclick="edit(this)">×</button>
+
+            <button value="4" onclick="edit(this)">4</button>
+            <button value="5" onclick="edit(this)">5</button>
+            <button value="6" onclick="edit(this)">6</button>
+            <button class="operator" value="-" onclick="edit(this)">－</button>
+
+            <button value="1" onclick="edit(this)">1</button>
+            <button value="2" onclick="edit(this)">2</button>
+            <button value="3" onclick="edit(this)">3</button>
+            <button class="operator" value="+" onclick="edit(this)">+</button>
+
+            <button class="zero" value="0" onclick="edit(this)">0</button>
+            <button value="." onclick="edit(this)">.</button>
+            <button class="operator" value="=" onclick="calc()">=</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

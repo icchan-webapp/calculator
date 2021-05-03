@@ -1,0 +1,73 @@
+/* この度は、本コードを見ていただきありがとうございます。
+ゆっくりと見ていってください！ */
+
+/* デフォルト *******************/
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+/* 電卓の位置決め（上下左右中央揃え） *******/
+.calc_body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .4);
+}
+
+/* 電卓液晶部分 ********/
+#result {
+    box-sizing: border-box;
+    padding: 30px 30px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 2.5rem;
+}
+
+/* ボタン *********/
+.buttons {
+    background: #fafafa;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.buttons button {
+    padding: 30px;
+    font-size: 1.5rem;
+    border: none;
+    transition: .4s all linear;
+}
+
+.buttons button:hover {
+    background: #e0e0e0;
+}
+
+.buttons button:active {
+    background: #bdbdbd;
+}
+
+.buttons .operator{
+    background:#ff7900;
+}
+
+.buttons .operator:hover {
+    background:#ff6000;
+}
+
+.buttons .operator:active {
+    background:#ff4800 ;
+}
+
+.zero {
+   grid-column-start: 1;
+   grid-column-end: 3; 
+}
+
+
+
+
+
